@@ -18,3 +18,20 @@ const b = document.getElementById("btn")
 b.addEventListener("click", () => {
 console.log(nome.value)
 })
+
+async function criarUsuario() {
+    const novoUsuario = {nome: 'ana', idade: 25
+    const resposta = await fetch ('https://exemplo.com',
+         method: 'POST',
+         Header {
+            'Content-Type': 'application/json'
+         },  
+         body: JSON .stringify(novoUsuario) {
+
+         } resultado = await resposta.JSON
+         console.log('Criando com sucesso', resultado);
+        )    
+        
+    }
+    
+}
